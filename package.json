@@ -2,7 +2,7 @@
   "name": "rump-server-dev",
   "description": "Rump piece for adding a development server to the flow",
   "author": "Juan Placencia",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "license": "MIT",
   "homepage": "https://github.com/rumps/rump-server-dev",
   "repository": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "chalk": "^0.5.1",
     "connect-history-api-fallback": "^0.0.5",
-    "browser-sync": "^1.5.5",
+    "browser-sync": "^2.0.1",
     "extend": "^2.0.0",
     "require-all": "^1.0.0"
   }
