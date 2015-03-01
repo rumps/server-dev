@@ -39,7 +39,7 @@ default it monitors all built files, including those in subdirectories.
 #### `options.server.port` (`process.env.PORT` or `3000`)
 This specifies which port to run BrowserSync under.
 
-#### `options.server.pushState` (`true`)
+#### `options.server.pushState` (`false`)
 This specifies whether to support assistance with HTML5 history API by serving
 `index.html` on requests that don't have a file location.
 
