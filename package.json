@@ -11,7 +11,7 @@
   },
   "main": "./index.js",
   "dependencies": {
-    "chalk": "^0.5.1",
+    "chalk": "^1.0.0",
     "connect-history-api-fallback": "^0.0.5",
     "browser-sync": "^2.0.1",
     "extend": "^2.0.0",
