@@ -1,7 +1,10 @@
 # Rump Server Dev
 [![NPM](http://img.shields.io/npm/v/rump-server-dev.svg?style=flat-square)](https://www.npmjs.org/package/rump-server-dev)
 ![License](http://img.shields.io/npm/l/rump-server-dev.svg?style=flat-square)
+[![Travis](http://img.shields.io/travis/rumps/rump-server-dev.svg?style=flat-square&label=travis)](https://travis-ci.org/rumps/rump-server-dev)
+[![Appveyor](http://img.shields.io/appveyor/ci/jupl/rump-server-dev.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/jupl/rump-server-dev)
 [![Dependencies](http://img.shields.io/david/rumps/rump-server-dev.svg?style=flat-square)](https://david-dm.org/rumps/rump-server-dev)
+[![Dev Dependencies](http://img.shields.io/david/dev/rumps/rump-server-dev.svg?style=flat-square)](https://david-dm.org/rumps/rump-server-dev#info=devDependencies)
 
 
 ## About
