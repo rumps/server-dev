@@ -35,6 +35,7 @@ describe('rump dev server tasks', function() {
   });
 
   it('are added and defined', function() {
+    this.timeout(3200);
     var callback = sinon.spy();
     rump.on('gulp:main', callback);
     rump.on('gulp:server', callback);
