@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/rumps/rump-server-dev"
   },
-  "main": "./index.js",
+  "main": "./lib",
   "dependencies": {
     "chalk": "^1.0.0",
     "connect-history-api-fallback": "^0.0.5",
