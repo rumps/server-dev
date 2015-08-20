@@ -1,6 +1,14 @@
 # Changelog
 
-### 0.6.1
+### 0.7.0
+- Use Babel fully for ES2015+
+- Replace JSHint with ESLint
+- Add code coverage support
+- Update packages
+- Rewrite tests with ES2015+ and should.js
+- **BREAKING** Rename tasks to `server:dev`
+
+#### 0.6.1
 - Update `browser-sync`
 
 ### 0.6.0
