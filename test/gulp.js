@@ -8,6 +8,8 @@ import {stripColor} from 'chalk'
 import {readFile, writeFile} from 'mz/fs'
 import {spy} from 'sinon'
 
+fetch.Promise = Promise
+
 describe('tasks', function() {
   this.timeout(0)
 
@@ -40,7 +42,18 @@ describe('tasks', function() {
     console.log = log
     logs.slice(-4).should.eql([
       '',
-      '--- Server Dev v0.7.0',
+      '--- Server Dev v0.8.0',
+      'Static files from tmp are served with pushState on port 3000',
+      '',
+    ])
+    rump.reconfigure({server: {pushState: false}})
+    logs.length = 0
+    console.log = newLog
+    gulp.start('spec:info')
+    console.log = log
+    logs.slice(-4).should.eql([
+      '',
+      '--- Server Dev v0.8.0',
       'Static files from tmp are served on port 3000',
       '',
     ])
