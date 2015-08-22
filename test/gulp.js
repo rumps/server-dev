@@ -40,7 +40,7 @@ describe('tasks', function() {
     console.log = log
     logs.slice(-4).should.eql([
       '',
-      '--- Server Dev v0.7.0',
+      '--- Server Dev v0.8.0',
       'Static files from tmp are served on port 3000',
       '',
     ])
