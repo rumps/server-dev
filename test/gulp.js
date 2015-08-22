@@ -8,6 +8,8 @@ import {stripColor} from 'chalk'
 import {readFile, writeFile} from 'mz/fs'
 import {spy} from 'sinon'
 
+fetch.Promise = Promise
+
 describe('tasks', function() {
   this.timeout(0)
 
