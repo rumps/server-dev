@@ -10,6 +10,15 @@
     "type": "git",
     "url": "https://github.com/rumps/server-dev"
   },
+  "keywords": [
+    "browser-sync",
+    "browsersync",
+    "gulp",
+    "pushstate",
+    "server",
+    "rump",
+    "rump-module"
+  ],
   "scripts": {
     "preci": "npm run lint",
     "ci": "babel-node node_modules/.bin/isparta cover --report json _mocha",
