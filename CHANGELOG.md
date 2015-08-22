@@ -2,6 +2,7 @@
 
 ### 0.8.0
 - Make use of `babel-runtime`
+- Display in info task if pushState is on
 
 ### 0.7.0
 - Use Babel fully for ES2015+
