@@ -11,6 +11,6 @@ rump.on('gulp:main', (...args) => {
   rump.emit('gulp:server:dev', ...args)
 })
 
-Object.defineProperty(rump.configs, 'browserSync', {
+Reflect.defineProperty(rump.configs, 'browserSync', {
   get: () => rump.configs.main.server.browserSync,
 })

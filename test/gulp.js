@@ -10,7 +10,7 @@ import {spy} from 'sinon'
 
 fetch.Promise = Promise
 
-describe('tasks', function() {
+describe('tasks', function describeTasks() {
   this.timeout(0)
 
   afterEach(() => {
@@ -35,8 +35,8 @@ describe('tasks', function() {
   })
 
   it('display correct information in info task', () => {
-    const logs = [],
-          {log} = console
+    const logs = []
+    const {log} = console
     console.log = newLog
     gulp.start('spec:info')
     console.log = log
@@ -79,14 +79,14 @@ describe('tasks', function() {
     afterEach(() => writeFile('test/fixtures/index.html', original))
 
     it('serves content', async() => {
-      const original1 = await readFile('test/fixtures/extra.html'),
-            response = await Promise.all([
-              fetch('http://localhost:3000/'),
-              fetch('http://localhost:3000/index.html'),
-              fetch('http://localhost:3000/void'),
-              fetch('http://localhost:3000/extra.html'),
-            ]),
-            contents = await Promise.all(response.map(x => x.text()))
+      const original1 = await readFile('test/fixtures/extra.html')
+      const response = await Promise.all([
+        fetch('http://localhost:3000/'),
+        fetch('http://localhost:3000/index.html'),
+        fetch('http://localhost:3000/void'),
+        fetch('http://localhost:3000/extra.html'),
+      ])
+      const contents = await Promise.all(response.map(x => x.text()))
       contents[0].should.equal(original.toString())
       contents[1].should.equal(original.toString())
       contents[2].should.equal(original.toString())
@@ -95,7 +95,8 @@ describe('tasks', function() {
 
     it('handles updates', async() => {
       const newContent = '<h1>New World</h1>\n'
-      let response, contents
+      let response
+      let contents
       await writeFile('test/fixtures/index.html', newContent)
       await timeout(1000)
       response = await Promise.all([

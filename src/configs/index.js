@@ -3,14 +3,14 @@ import extend from 'extend'
 import rump from 'rump'
 import {join} from 'path'
 
-const {configs} = rump,
-      history = historyApiFallback()
+const {configs} = rump
+const history = historyApiFallback()
 
 rebuild()
 
 export function rebuild() {
-  const development = configs.main.environment === 'development',
-        {PORT} = process.env
+  const development = configs.main.environment === 'development'
+  const {PORT} = process.env
   let defaults
   configs.main.globs = extend(true, {
     watch: {server: '**/*'},
